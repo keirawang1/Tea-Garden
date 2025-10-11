@@ -7,21 +7,25 @@ using UnityEngine.UI;
 public class AttributeDisplay : MonoBehaviour
 {
     public Ingredient ingredient;
-
+    public Drink drink;
     public TMP_Text nameText;
-    public TMP_Text cutenessText;
-    public TMP_Text sweetnessText;
-    public TMP_Text costText;
-    public Image icon;
+    public TMP_Text cutenessValue;
+    public TMP_Text sweetnessValue;
+    public TMP_Text costValue;
+    public TMP_Text cutenessTotal;
+    public TMP_Text sweetnessTotal;
+    public TMP_Text costTotal;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Display the values on the attribute menu once button is clicked
     void Start()
     {
         nameText.text = ingredient.name;
-        cutenessText.text = ingredient.cuteness.ToString();
-        sweetnessText.text = ingredient.sweetness.ToString();
-        costText.text = ingredient.cost.ToString();
-        icon.sprite = ingredient.icon;
-        
+        cutenessValue.text = ingredient.cuteness.ToString();
+        sweetnessValue.text = ingredient.sweetness.ToString();
+        costValue.text = ingredient.cost.ToString();
+        cutenessTotal.text = (drink.cutenessTotal + ingredient.cuteness).ToString();
+        sweetnessTotal.text = (drink.sweetnessTotal + ingredient.sweetness).ToString();
+        costTotal.text = (drink.costTotal + ingredient.cost).ToString();
+
     }
 }

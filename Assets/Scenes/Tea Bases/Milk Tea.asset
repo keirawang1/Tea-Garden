@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 563b7a8b622855a45906da21cb056b9c, type: 3}
-  m_Name: Matcha
+  m_Name: Milk Tea
   m_EditorClassIdentifier: 
-  ingredientName: Matcha
-  icon: {fileID: 21300000, guid: ba76de2dd9de40948a0a24090a01c2e1, type: 3}
+  ingredientName: Milk tea
+  icon: {fileID: 21300000, guid: 8015e84433908904eac664124323c14d, type: 3}
   prefab: {fileID: 0}
-  cuteness: 1
-  sweetness: -3
-  cost: 4
+  cuteness: 2
+  sweetness: 2
+  cost: 2
   type: 1
