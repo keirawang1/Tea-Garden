@@ -17,7 +17,7 @@ public class AttributeDisplay : MonoBehaviour
     public TMP_Text costTotal;
 
     // Display the values on the attribute menu once button is clicked
-    void Start()
+    void OnMouseDown()
     {
         nameText.text = ingredient.name;
         cutenessValue.text = ingredient.cuteness.ToString();

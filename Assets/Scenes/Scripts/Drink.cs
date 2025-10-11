@@ -13,7 +13,7 @@ public class Drink : ScriptableObject
     public Ingredient topping;
     public Ingredient decoration;
 
-    public int cutenessTotal;
-    public int sweetnessTotal;
-    public int costTotal;
+    public int cutenessTotal = 0;
+    public int sweetnessTotal = 0;
+    public int costTotal = 0;
 }
