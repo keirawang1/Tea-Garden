@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f1150a2a5ac5ee46a1c6062c0676190, type: 3}
+  m_Name: Drink
+  m_EditorClassIdentifier: 
+  cupSize: {fileID: 0}
+  teaBase: {fileID: 0}
+  topping: {fileID: 0}
+  decoration: {fileID: 0}
+  cutenessTotal: 0
+  sweetnessTotal: 0
+  costTotal: 0

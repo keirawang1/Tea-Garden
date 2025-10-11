@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563b7a8b622855a45906da21cb056b9c, type: 3}
+  m_Name: Small cup
+  m_EditorClassIdentifier: 
+  ingredientName: Small cup
+  icon: {fileID: 21300000, guid: e6e8087f49272dc4ea850e9bb5a343d1, type: 3}
+  prefab: {fileID: 919132149155446097, guid: 4dfcaaf52cd23b2438265f52d6c7fcfe, type: 3}
+  cuteness: 0
+  sweetness: 0
+  cost: 4
+  type: 0
