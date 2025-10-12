@@ -15,17 +15,27 @@ public class AttributeDisplay : MonoBehaviour
     public TMP_Text cutenessTotal;
     public TMP_Text sweetnessTotal;
     public TMP_Text costTotal;
+    public IngredientManager select;
+    public GameObject display;
+
+
 
     // Display the values on the attribute menu once button is clicked
-    void OnMouseDown()
+    public void OnClick()
     {
-        nameText.text = ingredient.name;
-        cutenessValue.text = ingredient.cuteness.ToString();
-        sweetnessValue.text = ingredient.sweetness.ToString();
-        costValue.text = ingredient.cost.ToString();
-        cutenessTotal.text = (drink.cutenessTotal + ingredient.cuteness).ToString();
-        sweetnessTotal.text = (drink.sweetnessTotal + ingredient.sweetness).ToString();
-        costTotal.text = (drink.costTotal + ingredient.cost).ToString();
+        if (ingredient != null)
+        {
+            display.SetActive(true);
+            nameText.text = ingredient.name;
+            cutenessValue.text = ingredient.cuteness.ToString();
+            sweetnessValue.text = ingredient.sweetness.ToString();
+            costValue.text = ingredient.cost.ToString();
+            cutenessTotal.text = (drink.cutenessTotal + ingredient.cuteness).ToString();
+            sweetnessTotal.text = (drink.sweetnessTotal + ingredient.sweetness).ToString();
+            costTotal.text = (drink.costTotal + ingredient.cost).ToString();
+            select.SelectIngredient(ingredient);
+        }
+        
 
     }
 }

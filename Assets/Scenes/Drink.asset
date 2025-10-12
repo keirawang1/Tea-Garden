@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f1150a2a5ac5ee46a1c6062c0676190, type: 3}
   m_Name: Drink
   m_EditorClassIdentifier: 
-  cupSize: {fileID: 11400000, guid: f22fbf40c57fa924b9ff18a1dca69df3, type: 2}
-  teaBase: {fileID: 11400000, guid: 9bba909677b329b4e88e05742d52a9c9, type: 2}
+  cupSize: {fileID: 11400000, guid: b96bea9e7abd38b4fa7b0dd173f46b5d, type: 2}
+  teaBase: {fileID: 11400000, guid: 9f76f56f0897ff44188fa07680f7c85b, type: 2}
   topping: {fileID: 11400000, guid: 7a66ed500f3e46d4296a288f8ac50e4f, type: 2}
   decoration: {fileID: 11400000, guid: ef720adbf1b4ff841a886b44ee894462, type: 2}
-  cutenessTotal: 0
-  sweetnessTotal: 0
-  costTotal: 0
+  cutenessTotal: 12
+  sweetnessTotal: 12
+  costTotal: 16

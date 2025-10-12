@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 49187130}
   - component: {fileID: 49187129}
   - component: {fileID: 49187128}
+  - component: {fileID: 49187132}
   m_Layer: 5
   m_Name: Ingredient Icon
   m_TagString: Untagged
@@ -346,7 +347,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 49187130}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 49187132}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &49187129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,6 +413,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49187126}
   m_CullTransparentMesh: 1
+--- !u!114 &49187132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49187126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 9f76f56f0897ff44188fa07680f7c85b, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1001 &95740738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -663,6 +698,7 @@ GameObject:
   - component: {fileID: 134701463}
   - component: {fileID: 134701466}
   - component: {fileID: 134701465}
+  - component: {fileID: 134701467}
   m_Layer: 5
   m_Name: Ingredient Icon
   m_TagString: Untagged
@@ -770,7 +806,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 134701463}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 134701467}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &134701466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,6 +834,28 @@ MonoBehaviour:
   ingredient: {fileID: 11400000, guid: 9bba909677b329b4e88e05742d52a9c9, type: 2}
   nameText: {fileID: 422003669}
   icon: {fileID: 134701463}
+--- !u!114 &134701467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134701461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 9bba909677b329b4e88e05742d52a9c9, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &149801226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,6 +2700,7 @@ GameObject:
   - component: {fileID: 527872979}
   - component: {fileID: 527872978}
   - component: {fileID: 527872977}
+  - component: {fileID: 527872981}
   m_Layer: 5
   m_Name: Ingredient Icon
   m_TagString: Untagged
@@ -2699,7 +2770,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 527872979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 527872981}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &527872978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2753,6 +2836,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527872975}
   m_CullTransparentMesh: 1
+--- !u!114 &527872981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527872975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 5b78ca5de8b149b4ab58f0928de50f52, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &566915255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,6 +3128,7 @@ GameObject:
   - component: {fileID: 582974933}
   - component: {fileID: 582974932}
   - component: {fileID: 582974931}
+  - component: {fileID: 582974935}
   m_Layer: 5
   m_Name: Ingredient Icon
   m_TagString: Untagged
@@ -3092,7 +3198,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 582974933}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 582974935}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &582974932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3146,6 +3264,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582974929}
   m_CullTransparentMesh: 1
+--- !u!114 &582974935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582974929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 7a66ed500f3e46d4296a288f8ac50e4f, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &584029116
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,6 +3298,7 @@ GameObject:
   - component: {fileID: 584029121}
   - component: {fileID: 584029120}
   - component: {fileID: 584029119}
+  - component: {fileID: 584029122}
   - component: {fileID: 584029118}
   m_Layer: 5
   m_Name: Ingredient Icon
@@ -3228,7 +3369,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 584029120}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 584029122}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &584029119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3282,6 +3435,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584029116}
   m_CullTransparentMesh: 1
+--- !u!114 &584029122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584029116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 15eae690dbbd9af4ca11c3d1edd2bf11, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &637200143
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,6 +3467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637200144}
   - component: {fileID: 637200146}
+  - component: {fileID: 637200147}
   - component: {fileID: 637200145}
   m_Layer: 5
   m_Name: Ingredient Name (1)
@@ -3419,6 +3595,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637200143}
   m_CullTransparentMesh: 1
+--- !u!114 &637200147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637200143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 0}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 0}
+  cutenessValue: {fileID: 0}
+  sweetnessValue: {fileID: 0}
+  costValue: {fileID: 0}
+  cutenessTotal: {fileID: 0}
+  sweetnessTotal: {fileID: 0}
+  costTotal: {fileID: 0}
+  select: {fileID: 0}
 --- !u!1 &659309878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cac9dd0c51cf2e540969d1677fce543d, type: 3}
@@ -3505,6 +3703,8 @@ GameObject:
   - component: {fileID: 672046321}
   - component: {fileID: 672046323}
   - component: {fileID: 672046322}
+  - component: {fileID: 672046324}
+  - component: {fileID: 672046325}
   m_Layer: 5
   m_Name: Add Button
   m_TagString: Untagged
@@ -3569,6 +3769,77 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672046320}
   m_CullTransparentMesh: 1
+--- !u!114 &672046324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672046320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f66eececcec5ce43875f0c0f68f83fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  ingredient: {fileID: 0}
+  select: {fileID: 711944124}
+--- !u!114 &672046325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672046320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 672046322}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 672046324}
+        m_TargetAssemblyTypeName: AddIngredient, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &675224117
 GameObject:
   m_ObjectHideFlags: 0
@@ -3582,6 +3853,7 @@ GameObject:
   - component: {fileID: 675224121}
   - component: {fileID: 675224120}
   - component: {fileID: 675224119}
+  - component: {fileID: 675224123}
   m_Layer: 5
   m_Name: Ingredient Icon
   m_TagString: Untagged
@@ -3651,7 +3923,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 675224121}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 675224123}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &675224120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3705,6 +3989,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675224117}
   m_CullTransparentMesh: 1
+--- !u!114 &675224123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675224117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 72ee1e4daf070ab46b3a840d902a4525, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &706600763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3781,6 +4087,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706600763}
   m_CullTransparentMesh: 1
+--- !u!1 &711944123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711944125}
+  - component: {fileID: 711944124}
+  m_Layer: 0
+  m_Name: IngredientManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &711944124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711944123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57e5ece9934d5942909f78cee10ebd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currIngredient: {fileID: 0}
+--- !u!4 &711944125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711944123}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.59554905, y: -0.3057153, z: -0.22128892, w: 0.7091479}
+  m_LocalPosition: {x: -964.17, y: -534.785, z: -15.721}
+  m_LocalScale: {x: 14.482352, y: 14.482352, z: 18.71208}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229558041}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &795768538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,6 +4193,7 @@ GameObject:
   - component: {fileID: 814027351}
   - component: {fileID: 814027350}
   - component: {fileID: 814027349}
+  - component: {fileID: 814027352}
   - component: {fileID: 814027348}
   m_Layer: 5
   m_Name: Ingredient Icon
@@ -3912,7 +4264,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 814027350}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 814027352}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &814027349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3966,6 +4330,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814027346}
   m_CullTransparentMesh: 1
+--- !u!114 &814027352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814027346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: ef720adbf1b4ff841a886b44ee894462, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,7 +4605,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 982112460}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 982112462}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &982112459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4294,6 +4692,7 @@ MonoBehaviour:
   cutenessTotal: {fileID: 1799480006}
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &1016041218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4490,6 +4889,7 @@ MonoBehaviour:
   cutenessTotal: {fileID: 0}
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
+  select: {fileID: 0}
 --- !u!114 &1025645590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4747,6 +5147,7 @@ MonoBehaviour:
   cutenessTotal: {fileID: 0}
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
+  select: {fileID: 0}
 --- !u!1001 &1046172564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5478,6 +5879,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 795768539}
+  - {fileID: 711944125}
+  - {fileID: 1346801047}
   - {fileID: 1176412065}
   - {fileID: 513099801}
   - {fileID: 706600764}
@@ -5866,6 +6269,7 @@ GameObject:
   - component: {fileID: 1286438054}
   - component: {fileID: 1286438053}
   - component: {fileID: 1286438052}
+  - component: {fileID: 1286438056}
   m_Layer: 5
   m_Name: Ingredient Icon
   m_TagString: Untagged
@@ -5935,7 +6339,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1286438054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286438056}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1286438053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5989,6 +6405,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286438050}
   m_CullTransparentMesh: 1
+--- !u!114 &1286438056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286438050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: accd8a43d067d634ba85de3d19a5b1c1, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &1300204596
 GameObject:
   m_ObjectHideFlags: 0
@@ -6442,6 +6880,51 @@ RectTransform:
   m_AnchoredPosition: {x: -8.3699255, y: -10.106767}
   m_SizeDelta: {x: 55.820198, y: 57.038193}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1346801046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346801047}
+  - component: {fileID: 1346801048}
+  m_Layer: 0
+  m_Name: DrinkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346801047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346801046}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.59554905, y: -0.3057153, z: -0.22128892, w: 0.7091479}
+  m_LocalPosition: {x: -964.17, y: -534.785, z: -15.721}
+  m_LocalScale: {x: 14.482352, y: 14.482352, z: 18.71208}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229558041}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346801048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346801046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e86c24fdde45f458c17d36e1de90f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
 --- !u!1 &1389592731
 GameObject:
   m_ObjectHideFlags: 0
@@ -7537,8 +8020,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.4, y: 36.6}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 7.5, y: 36.6}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496654667
 MonoBehaviour:
@@ -8060,6 +8543,7 @@ MonoBehaviour:
   cutenessTotal: {fileID: 0}
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
+  select: {fileID: 0}
 --- !u!114 &1635491841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8171,6 +8655,7 @@ GameObject:
   - component: {fileID: 1646470750}
   - component: {fileID: 1646470749}
   - component: {fileID: 1646470748}
+  - component: {fileID: 1646470751}
   - component: {fileID: 1646470747}
   m_Layer: 5
   m_Name: Ingredient Icon
@@ -8241,7 +8726,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1646470749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1646470751}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1646470748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8295,6 +8792,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646470745}
   m_CullTransparentMesh: 1
+--- !u!114 &1646470751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646470745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 007282aced7cb6a4c8f68537e43fdffa, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &1657462478
 GameObject:
   m_ObjectHideFlags: 0
@@ -8307,6 +8826,7 @@ GameObject:
   - component: {fileID: 1657462481}
   - component: {fileID: 1657462480}
   - component: {fileID: 1657462482}
+  - component: {fileID: 1657462483}
   m_Layer: 5
   m_Name: Restart Menu
   m_TagString: Untagged
@@ -8332,7 +8852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 816, y: -324}
+  m_AnchoredPosition: {x: 816.1, y: -324.07}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657462480
@@ -8416,7 +8936,45 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1657462480}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 407604952}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1389592731}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1657462483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657462478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817847af8992fe2468489453e968dc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1346801048}
+  restartMenu: {fileID: 1657462478}
 --- !u!1 &1671700661
 GameObject:
   m_ObjectHideFlags: 0
@@ -8551,6 +9109,7 @@ MonoBehaviour:
   cutenessTotal: {fileID: 0}
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
+  select: {fileID: 0}
 --- !u!114 &1674828428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8662,6 +9221,7 @@ GameObject:
   - component: {fileID: 1714616721}
   - component: {fileID: 1714616720}
   - component: {fileID: 1714616719}
+  - component: {fileID: 1714616722}
   - component: {fileID: 1714616718}
   m_Layer: 5
   m_Name: Ingredient Icon
@@ -8732,7 +9292,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1714616720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1714616722}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1714616719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8786,6 +9358,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714616716}
   m_CullTransparentMesh: 1
+--- !u!114 &1714616722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714616716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 4f04167e55cddf04f9d43355f5dac649, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &1732181542
 GameObject:
   m_ObjectHideFlags: 0
@@ -9006,7 +9600,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1746355754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1746355756}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1746355753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9081,6 +9687,7 @@ MonoBehaviour:
   cutenessTotal: {fileID: 1799480006}
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &1799480004
 GameObject:
   m_ObjectHideFlags: 0
@@ -9299,7 +9906,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1885451028}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1885451030}
+        m_TargetAssemblyTypeName: RestartButton, Assembly-CSharp
+        m_MethodName: OnClickShowButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1885451028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9363,6 +9982,7 @@ GameObject:
   - component: {fileID: 1892051394}
   - component: {fileID: 1892051393}
   - component: {fileID: 1892051392}
+  - component: {fileID: 1892051395}
   - component: {fileID: 1892051391}
   m_Layer: 5
   m_Name: Ingredient Icon
@@ -9433,7 +10053,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1892051393}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1892051395}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1892051392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9487,6 +10119,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892051389}
   m_CullTransparentMesh: 1
+--- !u!114 &1892051395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892051389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: ab44dd5aad551014b9d8392d8ae0f776, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &1933695193
 GameObject:
   m_ObjectHideFlags: 0
@@ -9499,6 +10153,7 @@ GameObject:
   - component: {fileID: 1933695198}
   - component: {fileID: 1933695197}
   - component: {fileID: 1933695196}
+  - component: {fileID: 1933695199}
   - component: {fileID: 1933695195}
   m_Layer: 5
   m_Name: Ingredient Icon
@@ -9569,7 +10224,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1933695197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1933695199}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1933695196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9623,6 +10290,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933695193}
   m_CullTransparentMesh: 1
+--- !u!114 &1933695199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933695193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 712ceb54e2d54f8448749cdff0ab1303, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &1963252935
 GameObject:
   m_ObjectHideFlags: 0
@@ -9636,6 +10325,7 @@ GameObject:
   - component: {fileID: 1963252939}
   - component: {fileID: 1963252938}
   - component: {fileID: 1963252937}
+  - component: {fileID: 1963252941}
   m_Layer: 5
   m_Name: Ingredient Icon
   m_TagString: Untagged
@@ -9705,7 +10395,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1963252939}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1963252941}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1963252938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9759,6 +10461,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963252935}
   m_CullTransparentMesh: 1
+--- !u!114 &1963252941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963252935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 490a9ddc81c4f4b4895ad88f17ab8ea0, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &1966282018
 GameObject:
   m_ObjectHideFlags: 0
@@ -9909,6 +10633,7 @@ GameObject:
   - component: {fileID: 1997933673}
   - component: {fileID: 1997933672}
   - component: {fileID: 1997933671}
+  - component: {fileID: 1997933675}
   m_Layer: 5
   m_Name: Ingredient Icon
   m_TagString: Untagged
@@ -9978,7 +10703,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1997933673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1997933675}
+        m_TargetAssemblyTypeName: AttributeDisplay, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1997933672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10032,6 +10769,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997933669}
   m_CullTransparentMesh: 1
+--- !u!114 &1997933675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997933669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175bfe7dd5aa6c0488f91811b3587c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 3ffb5d01dce23d54fa3a8f5e22c5cddb, type: 2}
+  drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
+  nameText: {fileID: 1496654667}
+  cutenessValue: {fileID: 578359994}
+  sweetnessValue: {fileID: 1606227348}
+  costValue: {fileID: 149801228}
+  cutenessTotal: {fileID: 1799480006}
+  sweetnessTotal: {fileID: 226680809}
+  costTotal: {fileID: 1270381245}
+  select: {fileID: 711944124}
 --- !u!1 &2109475757 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4c78f451b5a0f27409d94f0d6ee97827, type: 3}
