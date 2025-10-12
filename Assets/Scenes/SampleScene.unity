@@ -435,6 +435,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1001 &95740738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -856,6 +857,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &149801226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,6 +1989,7 @@ GameObject:
   - component: {fileID: 407604956}
   - component: {fileID: 407604955}
   - component: {fileID: 407604954}
+  - component: {fileID: 407604957}
   m_Layer: 5
   m_Name: yes
   m_TagString: Untagged
@@ -2056,7 +2059,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 407604955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 407604957}
+        m_TargetAssemblyTypeName: RestartTab, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &407604955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2095,6 +2110,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407604952}
   m_CullTransparentMesh: 1
+--- !u!114 &407604957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407604952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817847af8992fe2468489453e968dc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1346801048}
+  restartMenu: {fileID: 1657462478}
+  restart: 1
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,6 +2888,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &566915255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,6 +3317,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &584029116
 GameObject:
   m_ObjectHideFlags: 0
@@ -3457,6 +3489,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &637200143
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,6 +3650,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
   select: {fileID: 0}
+  display: {fileID: 0}
 --- !u!1 &659309878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cac9dd0c51cf2e540969d1677fce543d, type: 3}
@@ -3784,6 +3818,7 @@ MonoBehaviour:
   drink: {fileID: 11400000, guid: c3011cd445277844ba7f9da999d416cf, type: 2}
   ingredient: {fileID: 0}
   select: {fileID: 711944124}
+  AttributeDisplay: {fileID: 513099800}
 --- !u!114 &672046325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4011,6 +4046,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &706600763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4352,6 +4388,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4693,6 +4730,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &1016041218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4890,6 +4928,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
   select: {fileID: 0}
+  display: {fileID: 0}
 --- !u!114 &1025645590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5148,6 +5187,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
   select: {fileID: 0}
+  display: {fileID: 0}
 --- !u!1001 &1046172564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6427,6 +6467,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &1300204596
 GameObject:
   m_ObjectHideFlags: 0
@@ -6937,6 +6978,7 @@ GameObject:
   - component: {fileID: 1389592735}
   - component: {fileID: 1389592734}
   - component: {fileID: 1389592733}
+  - component: {fileID: 1389592736}
   m_Layer: 5
   m_Name: no
   m_TagString: Untagged
@@ -7006,7 +7048,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1389592734}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389592736}
+        m_TargetAssemblyTypeName: RestartTab, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1389592734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7045,6 +7099,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389592731}
   m_CullTransparentMesh: 1
+--- !u!114 &1389592736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389592731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817847af8992fe2468489453e968dc99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1346801048}
+  restartMenu: {fileID: 1657462478}
+  restart: 0
 --- !u!1 &1390515224
 GameObject:
   m_ObjectHideFlags: 0
@@ -8544,6 +8613,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
   select: {fileID: 0}
+  display: {fileID: 0}
 --- !u!114 &1635491841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8814,6 +8884,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &1657462478
 GameObject:
   m_ObjectHideFlags: 0
@@ -8826,7 +8897,6 @@ GameObject:
   - component: {fileID: 1657462481}
   - component: {fileID: 1657462480}
   - component: {fileID: 1657462482}
-  - component: {fileID: 1657462483}
   m_Layer: 5
   m_Name: Restart Menu
   m_TagString: Untagged
@@ -8936,45 +9006,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1657462480}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 407604952}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1389592731}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1657462483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657462478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817847af8992fe2468489453e968dc99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 1346801048}
-  restartMenu: {fileID: 1657462478}
+      m_Calls: []
 --- !u!1 &1671700661
 GameObject:
   m_ObjectHideFlags: 0
@@ -9110,6 +9142,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 0}
   costTotal: {fileID: 0}
   select: {fileID: 0}
+  display: {fileID: 0}
 --- !u!114 &1674828428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9380,6 +9413,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &1732181542
 GameObject:
   m_ObjectHideFlags: 0
@@ -9688,6 +9722,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &1799480004
 GameObject:
   m_ObjectHideFlags: 0
@@ -10141,6 +10176,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &1933695193
 GameObject:
   m_ObjectHideFlags: 0
@@ -10312,6 +10348,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &1963252935
 GameObject:
   m_ObjectHideFlags: 0
@@ -10483,6 +10520,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &1966282018
 GameObject:
   m_ObjectHideFlags: 0
@@ -10791,6 +10829,7 @@ MonoBehaviour:
   sweetnessTotal: {fileID: 226680809}
   costTotal: {fileID: 1270381245}
   select: {fileID: 711944124}
+  display: {fileID: 513099800}
 --- !u!1 &2109475757 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4c78f451b5a0f27409d94f0d6ee97827, type: 3}
