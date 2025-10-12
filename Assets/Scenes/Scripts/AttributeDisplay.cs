@@ -27,9 +27,23 @@ public class AttributeDisplay : MonoBehaviour
         {
             display.SetActive(true);
             nameText.text = ingredient.name;
-            cutenessValue.text = ": + " + ingredient.cuteness.ToString();
-            sweetnessValue.text = ": + " + ingredient.sweetness.ToString();
-            costValue.text = ": + " + ingredient.cost.ToString();
+            if (ingredient.cuteness > 0)
+            {
+                cutenessValue.text = ": +" + ingredient.cuteness.ToString();
+            } else
+            {
+                cutenessValue.text = ": " + ingredient.cuteness.ToString();
+            }
+           
+            if (ingredient.sweetness > 0)
+            {
+                sweetnessValue.text = ": +" + ingredient.sweetness.ToString();
+            } else
+            {
+                sweetnessValue.text = ": " + ingredient.sweetness.ToString();
+            }
+            
+            costValue.text = ": +" + ingredient.cost.ToString();
             cutenessTotal.text = (drink.cutenessTotal + ingredient.cuteness).ToString();
             sweetnessTotal.text = (drink.sweetnessTotal + ingredient.sweetness).ToString();
             costTotal.text = (drink.costTotal + ingredient.cost).ToString();

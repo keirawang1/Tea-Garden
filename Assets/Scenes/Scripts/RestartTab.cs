@@ -6,6 +6,7 @@ public class RestartTab : MonoBehaviour
     public GameObject restartMenu;
     public bool restart;
     public GameObject attributeMenu;
+    public OrderDisplay check;
 
     public void onClick()
     {
@@ -14,6 +15,7 @@ public class RestartTab : MonoBehaviour
         {
             manager.resetDrink();
             attributeMenu.SetActive(false);
+            check.Refresh();
         }
 
     }

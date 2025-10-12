@@ -6,11 +6,13 @@ public class AddIngredient : MonoBehaviour
     public Ingredient ingredient;
     public IngredientManager select;
     public GameObject AttributeDisplay;
+    public OrderDisplay check;
 
     public void OnClick()
     {
         AttributeDisplay.SetActive(false);
         ingredient = select.currIngredient;
+       
         if (ingredient != null)
         {
             switch (ingredient.type)
@@ -32,5 +34,6 @@ public class AddIngredient : MonoBehaviour
             drink.sweetnessTotal += ingredient.sweetness;
             drink.costTotal += ingredient.cost;
         }
+        check.Refresh();
     }
 }

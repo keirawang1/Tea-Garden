@@ -9,11 +9,11 @@ using UnityEngine.UI;
 public class Order : ScriptableObject
 {
 
-    public int cutenessMin = 0;
-    public int cutenessMax = 0;
-    public int sweetnessMin = 0;
-    public int sweetnessMax = 0; 
-    public int costMin = 0;
-    public int costMax = 0;
+    public int cutenessMin;
+    public int cutenessMax;
+    public int sweetnessMin;
+    public int sweetnessMax; 
+    public int costMin;
+    public int costMax;
 
 }

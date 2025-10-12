@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RestartButton : MonoBehaviour
+public class TrashButton : MonoBehaviour
 {
     public GameObject buttonToShow;
 
