@@ -3,7 +3,12 @@ guid: 9c055af366cdfc941a1a1a03cff9989d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boba
+    second: {fileID: -876546973899608171, guid: 20124f95bf3cd4847a51e8ebe1b35adb, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
