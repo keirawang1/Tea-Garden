@@ -7,12 +7,14 @@ public class RestartTab : MonoBehaviour
     public bool restart;
     public GameObject attributeMenu;
     public OrderDisplay check;
+    public GameObject orderScreen;
 
     public void onClick()
     {
-        restartMenu.SetActive(false);
+        restartMenu.GetComponent<UIPop>().PopOut();
         if (restart)
         {
+            orderScreen.GetComponent<UIPop>().PopIn();
             manager.resetDrink();
             attributeMenu.SetActive(false);
             check.Refresh();

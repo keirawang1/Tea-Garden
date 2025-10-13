@@ -25,7 +25,7 @@ public class AttributeDisplay : MonoBehaviour
     {
         if (ingredient != null)
         {
-            display.SetActive(true);
+            display.GetComponent<UISlide>().Show();
             nameText.text = ingredient.name;
             if (ingredient.cuteness > 0)
             {

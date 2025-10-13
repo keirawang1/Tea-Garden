@@ -10,7 +10,8 @@ public class AddIngredient : MonoBehaviour
 
     public void OnClick()
     {
-        AttributeDisplay.SetActive(false);
+        AttributeDisplay.GetComponent<UISlide>().Hide();
+
         ingredient = select.currIngredient;
        
         if (ingredient != null)
