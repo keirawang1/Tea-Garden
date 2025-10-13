@@ -11,10 +11,10 @@ public class RestartTab : MonoBehaviour
 
     public void onClick()
     {
-        restartMenu.GetComponent<UIPop>().PopOut();
+        restartMenu.GetComponent<UIPop>().Hide();
         if (restart)
         {
-            orderScreen.GetComponent<UIPop>().PopIn();
+            orderScreen.GetComponent<UIPop>().Show();
             manager.resetDrink();
             attributeMenu.SetActive(false);
             check.Refresh();

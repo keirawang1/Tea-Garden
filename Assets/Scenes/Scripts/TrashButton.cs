@@ -10,7 +10,7 @@ public class TrashButton : MonoBehaviour
     {
         if (buttonToShow != null)
         {
-            buttonToShow.GetComponent<UIPop>().PopIn();
+            buttonToShow.GetComponent<UIPop>().Show();
         }
     }
 }

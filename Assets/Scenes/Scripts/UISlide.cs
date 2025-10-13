@@ -5,8 +5,8 @@ public class UISlide : MonoBehaviour
     public enum SlideDirection { Up, Down, Left, Right }
 
     [SerializeField] private SlideDirection direction = SlideDirection.Up;
-    private float slideOffset = 200f;
-    private float animTime = 0.35f;
+    [SerializeField] private float slideOffset = 200f;
+    [SerializeField] private float animTime = 0.35f;
 
     private RectTransform rt;
     private CanvasGroup cg;

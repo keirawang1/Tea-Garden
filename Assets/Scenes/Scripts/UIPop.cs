@@ -16,7 +16,7 @@ public class UIPop : MonoBehaviour
         startScale = rt.localScale;
     }
 
-    public void PopIn()
+    public void Show()
     {
         gameObject.SetActive(true);
         cg.alpha = 0f;
@@ -40,7 +40,7 @@ public class UIPop : MonoBehaviour
             });
     }
 
-    public void PopOut()
+    public void Hide()
     {
         LeanTween.value(gameObject, 1f, 0f, animTime * 2)
             .setOnUpdate(v => cg.alpha = v)
