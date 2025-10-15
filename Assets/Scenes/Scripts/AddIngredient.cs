@@ -34,6 +34,7 @@ public class AddIngredient : MonoBehaviour
             drink.cutenessTotal += ingredient.cuteness;
             drink.sweetnessTotal += ingredient.sweetness;
             drink.costTotal += ingredient.cost;
+            ingredient.prefab.SetActive(true);
         }
         check.Refresh();
     }
