@@ -3,7 +3,6 @@ using UnityEngine;
 public class AddIngredient : MonoBehaviour
 {
     public Drink drink;
-    public Ingredient ingredient;
     public IngredientManager select;
     public GameObject AttributeDisplay;
     public OrderDisplay check;
@@ -12,10 +11,20 @@ public class AddIngredient : MonoBehaviour
     {
         AttributeDisplay.GetComponent<UISlide>().Hide();
 
-        ingredient = select.currIngredient;
+        Ingredient ingredient = select.currIngredient;
        
         if (ingredient != null)
         {
+            SceneIngredient[] sceneIngredients = FindObjectsOfType<SceneIngredient>(true); // include inactive
+            foreach (var sceneIngredient in sceneIngredients)
+            {
+                if (sceneIngredient.ingredientData == ingredient)
+                {
+                    sceneIngredient.gameObject.SetActive(true);
+                    break;
+                }
+            }
+
             switch (ingredient.type)
             {
                 case IngredientType.Cup:
@@ -34,7 +43,6 @@ public class AddIngredient : MonoBehaviour
             drink.cutenessTotal += ingredient.cuteness;
             drink.sweetnessTotal += ingredient.sweetness;
             drink.costTotal += ingredient.cost;
-            ingredient.prefab.SetActive(true);
         }
         check.Refresh();
     }

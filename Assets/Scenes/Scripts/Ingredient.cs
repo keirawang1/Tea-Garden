@@ -14,8 +14,6 @@ public class Ingredient : ScriptableObject
 {
     public string ingredientName;
     public Sprite icon;
-    public GameObject prefabL;
-    public GameObject prefabS;
     public int cuteness;
     public int sweetness;
     public int cost;
