@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-
 [CreateAssetMenu(menuName = "Scriptable Objects/Drink")]
 public class Drink : ScriptableObject
 {
