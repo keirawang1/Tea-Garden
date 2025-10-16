@@ -12,7 +12,7 @@ public class Drink : ScriptableObject
     public Ingredient teaBase;
     public Ingredient topping;
     public Ingredient decoration;
-
+    public SizeType size = SizeType.None;
     public int cutenessTotal = 0;
     public int sweetnessTotal = 0;
     public int costTotal = 0;

@@ -12,38 +12,79 @@ public class AddIngredient : MonoBehaviour
         AttributeDisplay.GetComponent<UISlide>().Hide();
 
         Ingredient ingredient = select.currIngredient;
-       
-        if (ingredient != null)
+        
+        if (ingredient == null) {
+                return;
+        }
+
+        if (drink.cupSize == null && ingredient.type != IngredientType.Cup)
         {
-            SceneIngredient[] sceneIngredients = FindObjectsOfType<SceneIngredient>(true); // include inactive
-            foreach (var sceneIngredient in sceneIngredients)
-            {
-                if (sceneIngredient.ingredientData == ingredient)
+            Debug.LogWarning("Must add a cup first!");
+            return;
+        }
+
+        if (drink.cupSize != null && ingredient.type == IngredientType.Cup) {
+            Debug.LogWarning("already added a cup");
+            return;
+        }    
+
+        if (drink.teaBase != null && ingredient.type == IngredientType.Tea) {
+            Debug.LogWarning("already added a tea");
+            return;
+        }
+
+        if (drink.topping != null && ingredient.type == IngredientType.Topping) {
+            Debug.LogWarning("already added a topping");
+            return;
+        }
+
+        switch (ingredient.type)
+        {
+            case IngredientType.Cup:
+                drink.cupSize = ingredient;
+                drink.size = ingredient.size;
+                break;
+            case IngredientType.Tea:
+                if (drink.cupSize == null)
                 {
-                    sceneIngredient.gameObject.SetActive(true);
+                    Debug.LogWarning("must add a cup first!");
                     break;
                 }
-            }
-
-            switch (ingredient.type)
-            {
-                case IngredientType.Cup:
-                    drink.cupSize = ingredient;
+                drink.teaBase = ingredient;
+                break;
+            case IngredientType.Topping:
+                if (drink.cupSize == null)
+                {
+                    Debug.LogWarning("must add a cup first!");
                     break;
-                case IngredientType.Tea:
-                    drink.teaBase = ingredient;
+                }
+                drink.topping = ingredient;
+                break;
+            case IngredientType.Decoration:
+                if (drink.cupSize == null)
+                {
+                    Debug.LogWarning("must add a cup first!");
                     break;
-                case IngredientType.Topping:
-                    drink.topping = ingredient;
-                    break;
-                case IngredientType.Decoration:
-                    drink.decoration = ingredient;
-                    break;
-            }
-            drink.cutenessTotal += ingredient.cuteness;
-            drink.sweetnessTotal += ingredient.sweetness;
-            drink.costTotal += ingredient.cost;
+                }
+                drink.decoration = ingredient;
+                break;
         }
+
+        SceneIngredient[] sceneIngredients = Resources.FindObjectsOfTypeAll<SceneIngredient>();
+        foreach (var sceneIngredient in sceneIngredients)
+        {
+            if (sceneIngredient.ingredientData == ingredient) {
+                // Only enable if the cup size matches
+                if (sceneIngredient.size == drink.size || (sceneIngredient.size == SizeType.Both))
+                    sceneIngredient.gameObject.SetActive(true);
+                else
+                    sceneIngredient.gameObject.SetActive(false);
+            }
+        }
+    
+        drink.cutenessTotal += ingredient.cuteness;
+        drink.sweetnessTotal += ingredient.sweetness;
+        drink.costTotal += ingredient.cost;
         check.Refresh();
     }
 }

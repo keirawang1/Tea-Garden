@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Small Cup
   icon: {fileID: 21300000, guid: e6e8087f49272dc4ea850e9bb5a343d1, type: 3}
-  prefab: {fileID: 919132149155446097, guid: 4dfcaaf52cd23b2438265f52d6c7fcfe, type: 3}
   cuteness: 3
   sweetness: 3
   cost: 4
   type: 0
+  size: 1
