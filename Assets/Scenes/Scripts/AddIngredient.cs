@@ -39,6 +39,16 @@ public class AddIngredient : MonoBehaviour
             return;
         }
 
+        if (drink.decoration1 != null && ingredient.type == IngredientType.Decoration1) {
+            Debug.LogWarning("already added a deco1");
+            return;
+        }
+
+        if (drink.decoration2 != null && ingredient.type == IngredientType.Decoration2) {
+            Debug.LogWarning("already added a deco2");
+            return;
+        }
+
         switch (ingredient.type)
         {
             case IngredientType.Cup:
@@ -61,13 +71,21 @@ public class AddIngredient : MonoBehaviour
                 }
                 drink.topping = ingredient;
                 break;
-            case IngredientType.Decoration:
+            case IngredientType.Decoration1:
                 if (drink.cupSize == null)
                 {
                     Debug.LogWarning("must add a cup first!");
                     break;
                 }
-                drink.decoration = ingredient;
+                drink.decoration1 = ingredient;
+                break;
+            case IngredientType.Decoration2:
+                if (drink.cupSize == null)
+                {
+                    Debug.LogWarning("must add a cup first!");
+                    break;
+                }
+                drink.decoration2 = ingredient;
                 break;
         }
 

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 563b7a8b622855a45906da21cb056b9c, type: 3}
-  m_Name: Small Straw
+  m_Name: Straw
   m_EditorClassIdentifier: 
-  ingredientName: Small straw
-  icon: {fileID: 21300000, guid: fbd266772e0495b4e98338ec38767769, type: 3}
-  prefab: {fileID: 0}
+  ingredientName: Straw
+  icon: {fileID: 21300000, guid: c83129222ac29f04491b0da0cbcb8817, type: 3}
   cuteness: 0
   sweetness: 0
   cost: 0
-  type: 3
+  type: 4
+  size: 0

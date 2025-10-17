@@ -18,11 +18,13 @@ public class DrinkManager : MonoBehaviour
         resetPrefab(drink.cupSize);
         resetPrefab(drink.teaBase);
         resetPrefab(drink.topping);
-        resetPrefab(drink.decoration);
+        resetPrefab(drink.decoration1);
+        resetPrefab(drink.decoration2);
         drink.cupSize = null;
         drink.teaBase = null;
         drink.topping = null;
-        drink.decoration = null;
+        drink.decoration1 = null;
+        drink.decoration2 = null;
         drink.size = SizeType.None;
         
     }

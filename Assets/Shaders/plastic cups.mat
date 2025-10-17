@@ -42,11 +42,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _LightSpecCutoff: 0.41
-    - _LightSpecCutoffSmoothness: 0.02
+    - _LightSpecCutoff: 1
+    - _LightSpecCutoffSmoothness: 0.058
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ViewSpecCutOff: 0.94
+    - _ViewSpecCutOff: 0.891
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _Spec_Color: {r: 0.33962262, g: 0.3334356, b: 0.3139907, a: 0}

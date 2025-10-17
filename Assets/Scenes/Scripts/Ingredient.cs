@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 
 
-public enum IngredientType { Cup, Tea, Topping, Decoration, None }
+public enum IngredientType { Cup, Tea, Topping, Decoration1, Decoration2 }
 public enum SizeType {Large, Small, Both, None }
 public enum TeaBase { Matcha, Milk, Lemon, Strawberry, None }
 
