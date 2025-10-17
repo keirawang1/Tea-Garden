@@ -24,7 +24,7 @@ public class DrinkManager : MonoBehaviour
         drink.topping = null;
         drink.decoration = null;
         drink.size = SizeType.None;
-
+        
     }
 
     private void resetPrefab(Ingredient ingredient) {
@@ -33,6 +33,15 @@ public class DrinkManager : MonoBehaviour
         {
             if (sceneIngredient.ingredientData == ingredient) {
                 sceneIngredient.gameObject.SetActive(false);
+            }
+            if (sceneIngredient.ingredientData.type == IngredientType.Tea) {
+                foreach (var s in sceneIngredients)
+                {
+                    if (s.ingredientData.ingredientName == "None") {
+                        sceneIngredient.ingredientData = s.ingredientData;
+                        sceneIngredient.gameObject.SetActive(false);
+                    }
+                }
             }
         }
     }

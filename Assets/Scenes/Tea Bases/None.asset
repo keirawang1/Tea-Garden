@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 563b7a8b622855a45906da21cb056b9c, type: 3}
-  m_Name: Milk Tea
+  m_Name: None
   m_EditorClassIdentifier: 
-  ingredientName: Milk Tea
-  icon: {fileID: 21300000, guid: 8015e84433908904eac664124323c14d, type: 3}
-  cuteness: 2
-  sweetness: 2
-  cost: 2
-  type: 1
-  size: 0
+  ingredientName: None
+  icon: {fileID: 0}
+  cuteness: 0
+  sweetness: 0
+  cost: 0
+  type: 4
+  size: 3

@@ -6,6 +6,7 @@ public class AddIngredient : MonoBehaviour
     public IngredientManager select;
     public GameObject AttributeDisplay;
     public OrderDisplay check;
+    public TeaMaterialLibrary teaLibrary;
 
     public void OnClick()
     {
@@ -73,8 +74,28 @@ public class AddIngredient : MonoBehaviour
         SceneIngredient[] sceneIngredients = Resources.FindObjectsOfTypeAll<SceneIngredient>();
         foreach (var sceneIngredient in sceneIngredients)
         {
-            if (sceneIngredient.ingredientData == ingredient) {
-                // Only enable if the cup size matches
+            if (ingredient.type == IngredientType.Tea && sceneIngredient.size == drink.size 
+            && sceneIngredient.ingredientData.ingredientName == "None") {
+                    sceneIngredient.ingredientData = ingredient;
+                    sceneIngredient.gameObject.SetActive(true);
+                    Material mat = null;
+                    foreach (TeaMaterialEntry entry in teaLibrary.entries)
+                    {
+                        if (entry.teaName == ingredient.ingredientName)
+                        {
+                            mat = entry.material;
+                        }
+                        if (mat != null)
+                        {
+                            Renderer renderer = sceneIngredient.GetComponent<Renderer>();
+                            if (renderer != null) {
+                                renderer.material = mat;
+                                break;
+                            }
+                        }
+                    }
+            }
+            else if (sceneIngredient.ingredientData == ingredient) {
                 if (sceneIngredient.size == drink.size || (sceneIngredient.size == SizeType.Both))
                     sceneIngredient.gameObject.SetActive(true);
                 else

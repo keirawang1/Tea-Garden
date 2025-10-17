@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563b7a8b622855a45906da21cb056b9c, type: 3}
   m_Name: Strawberry Tea
   m_EditorClassIdentifier: 
-  ingredientName: Strawberry tea
+  ingredientName: Strawberry Tea
   icon: {fileID: 21300000, guid: 8dbb0a87eef95174d9365d568680d120, type: 3}
-  prefab: {fileID: 0}
   cuteness: 3
   sweetness: 5
   cost: 5
   type: 1
+  size: 0

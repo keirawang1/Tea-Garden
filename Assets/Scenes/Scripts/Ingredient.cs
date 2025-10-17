@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 
 
-public enum IngredientType { Cup, Tea, Topping, Decoration }
-public enum SizeType {Large, Small, Both, None}
+public enum IngredientType { Cup, Tea, Topping, Decoration, None }
+public enum SizeType {Large, Small, Both, None }
 public enum TeaBase { Matcha, Milk, Lemon, Strawberry, None }
 
 
@@ -21,4 +21,5 @@ public class Ingredient : ScriptableObject
     public int cost;
     public IngredientType type;
     public SizeType size;
+    
 }

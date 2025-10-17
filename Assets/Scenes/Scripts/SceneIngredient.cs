@@ -4,4 +4,5 @@ public class SceneIngredient : MonoBehaviour
 {
     public Ingredient ingredientData; // Link the corresponding ScriptableObject
     public SizeType size;
+    public MeshRenderer mesh;
 }
