@@ -20,12 +20,15 @@ public class OrderDisplay : MonoBehaviour
     public GameObject costCheck;
     public GameObject costX;
 
+
+    (int min, int max) cute;
+    (int min, int max) sweet;
+    (int min, int max) cost;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        cutenessText.text = order.cutenessMin.ToString() + " - " + order.cutenessMax.ToString();
-        sweetnessText.text = order.sweetnessMin.ToString() + " - " + order.sweetnessMax.ToString();
-        costText.text = order.costMin.ToString() + " - " + order.costMax.ToString();
+        updateVal(order.getCuteness(), order.getSweetness(), order.getCost());
         check();
     }
 
@@ -37,7 +40,7 @@ public class OrderDisplay : MonoBehaviour
     void check()
     {
 
-        if (drink.cutenessTotal >= order.cutenessMin && drink.cutenessTotal <= order.cutenessMax)
+        if (drink.cutenessTotal >= cute.min && drink.cutenessTotal <= cute.max)
         {
             cuteCheck.SetActive(true);
             cuteX.SetActive(false);
@@ -47,7 +50,7 @@ public class OrderDisplay : MonoBehaviour
             cuteX.SetActive(true);
         }
 
-        if (drink.sweetnessTotal >= order.sweetnessMin && drink.sweetnessTotal <= order.sweetnessMax)
+        if (drink.sweetnessTotal >= sweet.min && drink.sweetnessTotal <= sweet.max)
         {
             sweetCheck.SetActive(true);
             sweetX.SetActive(false);
@@ -57,7 +60,7 @@ public class OrderDisplay : MonoBehaviour
             sweetX.SetActive(true) ;
         }
 
-        if (drink.costTotal >= order.costMin && drink.costTotal <= order.costMax)
+        if (drink.costTotal >= cost.min && drink.costTotal <= cost.max)
         {
             costCheck.SetActive(true);
             costX.SetActive(false);
@@ -66,4 +69,21 @@ public class OrderDisplay : MonoBehaviour
             costX.SetActive(true); 
         }
     }
+    
+    void updateVal((int min, int max) ct , (int min, int max) st, (int min, int max) cst)
+    {
+        cute = ct;
+        sweet = st;
+        cost = cst;
+        cutenessText.text = cute.min.ToString() + " - " + cute.max.ToString();
+        sweetnessText.text = sweet.min.ToString() + " - " + sweet.max.ToString();
+        costText.text = cost.min.ToString() + " - " + cost.max.ToString();
+    }
+
+    public void setOrder(Order o)
+    {
+        order = o;
+    }
 }
+
+    

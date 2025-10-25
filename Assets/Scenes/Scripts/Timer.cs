@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
     public TMP_Text timer;
     private bool timerRunning = true;
     public GameObject finishText;
+    private bool gameOver = false;
 
 
     void Update()
@@ -19,17 +20,18 @@ public class Timer : MonoBehaviour
             timer.text = string.Format("{0}:{1:00}", mins, secs);
             if (timeLeft <= 0)
             {
-                gameOver();
+                gameOverRun();
             }
         }
         return;
     }
 
-    void gameOver()
+    void gameOverRun()
     {
         timer.text = "0:00";
         timerRunning = false;
         finishText.GetComponent<UIPop>().Show();
+        gameOver = true;
         //finishText.GetComponent<UISlide>().Show();
     }
 
