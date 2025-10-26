@@ -3,20 +3,23 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public GameObject submitButton;
-    public DrinkManager manager;
+    public DrinkManager drink;
     public OrderDisplay order;
     public GameObject sweetCheck;
     public GameObject cuteCheck;
     public GameObject costCheck;
+    public Order orderTemp;
 
     private int numCompl;
     private int numDrinks;
 
     public void onClick()
     {
-        Order newOrder = ScriptableObject.CreateInstance<Order>();
+        drink.resetDrink();
+        Order newOrder = Instantiate(orderTemp);
         order.setOrder(newOrder);
-        manager.resetDrink();
+      
+
         if (sweetCheck.activeSelf && cuteCheck.activeSelf && costCheck.activeSelf)
         {
             numCompl += 1;

@@ -83,6 +83,8 @@ public class OrderDisplay : MonoBehaviour
     public void setOrder(Order o)
     {
         order = o;
+        updateVal(order.getCuteness(), order.getSweetness(), order.getCost());
+        check();
     }
 }
 
