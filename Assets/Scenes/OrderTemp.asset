@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: OrderTemp
   m_EditorClassIdentifier: 
   randCuteMin: 0
-  randCuteMax: 0
-  randSweetMin: 0
-  randSweetMax: 0
-  randCostMin: 0
-  randCostMax: 0
+  randCuteMax: 5
+  randSweetMin: -3
+  randSweetMax: 6
+  randCostMin: 1
+  randCostMax: 7
