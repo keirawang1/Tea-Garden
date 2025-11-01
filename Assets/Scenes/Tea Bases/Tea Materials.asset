@@ -21,3 +21,7 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: 931536157da76fa4aac834e28d498558, type: 2}
   - teaName: Strawberry Tea
     material: {fileID: 2100000, guid: f8f2a4c31707ab248818691e2051a668, type: 2}
+  - teaName: Taro Tea
+    material: {fileID: 2100000, guid: 48ebd2819cf0b5f44857a123031def7c, type: 2}
+  - teaName: Hojicha
+    material: {fileID: 2100000, guid: 049f95affc70013408b225b352b27084, type: 2}
