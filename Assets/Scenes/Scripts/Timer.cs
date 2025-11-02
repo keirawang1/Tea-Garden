@@ -31,8 +31,14 @@ public class Timer : MonoBehaviour
         timer.text = "0:00";
         timerRunning = false;
         finishText.GetComponent<UIPop>().Show();
+        
         gameOver = true;
         //finishText.GetComponent<UISlide>().Show();
+    }
+
+    public bool getGameOver()
+    {
+        return gameOver;
     }
 
     }

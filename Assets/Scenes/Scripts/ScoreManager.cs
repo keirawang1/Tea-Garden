@@ -12,11 +12,14 @@ public class ScoreManager : MonoBehaviour
 
     private int numCompl;
     private int numDrinks;
+    private int totMoney;
 
     public void onClick()
     {
+        totMoney += drink.getMoney();
         drink.resetDrink();
         Order newOrder = Instantiate(orderTemp);
+
         order.setOrder(newOrder);
       
 
@@ -25,5 +28,21 @@ public class ScoreManager : MonoBehaviour
             numCompl += 1;
         }
         numDrinks += 1;
+
+    }
+
+    public int getNumComp()
+    {
+        return numCompl;
+    }
+
+    public int getNumDrinks()
+    {
+        return numDrinks;
+    }
+
+    public int getTotalMoney()
+    {
+        return totMoney;
     }
 }

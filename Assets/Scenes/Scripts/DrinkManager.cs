@@ -10,6 +10,11 @@ public class DrinkManager : MonoBehaviour
 
     }
 
+    public int getMoney()
+    {
+        return drink.costTotal;
+    }
+
     public void resetDrink()
     {
         drink.cutenessTotal = 0;
