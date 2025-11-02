@@ -16,6 +16,10 @@ public class ScoreManager : MonoBehaviour
 
     public void onClick()
     {
+        if (sweetCheck.activeSelf && cuteCheck.activeSelf && costCheck.activeSelf)
+        {
+            numCompl += 1;
+        }
         totMoney += drink.getMoney();
         drink.resetDrink();
         Order newOrder = Instantiate(orderTemp);
@@ -23,10 +27,7 @@ public class ScoreManager : MonoBehaviour
         order.setOrder(newOrder);
       
 
-        if (sweetCheck.activeSelf && cuteCheck.activeSelf && costCheck.activeSelf)
-        {
-            numCompl += 1;
-        }
+        
         numDrinks += 1;
 
     }

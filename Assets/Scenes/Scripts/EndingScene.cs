@@ -10,26 +10,43 @@ public class EndingScene : MonoBehaviour
     public GameObject starL;
     public GameObject starM;
     public GameObject starR;
+    public GameObject summaryTab;
+
+    private float timeDelay = 0f;
+    private int starCount;
 
     void Start()
     {
-        moneyText.text = GameManager.money.ToString();
+        
+        //summaryTab.GetComponent<UISlide>().Show();
+
+        moneyText.text = "$" + GameManager.money.ToString();
         successText.text = GameManager.complDrinks.ToString();
         totalText.text = GameManager.drinks.ToString();
+        starCount = 3;
+     
+        
+    }
+    void Update()
+    {
+        timeDelay += Time.deltaTime;
 
+        if (!summaryTab.activeSelf && timeDelay >= 0.2f)
+        {
+            summaryTab.GetComponent<UISlide>().Show();
+        }
 
-        int starCount = GameManager.stars;
-        if (starCount >= 1)
+        if (starCount >= 1 && timeDelay >= 0.3f && !starM.activeSelf)
         {
-            starM.SetActive(true);
+            starM.GetComponent<UIPop>().Show();
         }
-        if (starCount >= 2)
+        if (starCount >= 2 && timeDelay >= 0.8f && !starL.activeSelf)
         {
-            starL.SetActive(true);
+            starL.GetComponent<UIPop>().Show();
         }
-        if (starCount >= 3)
+        if (starCount >= 3 && timeDelay >= 1.3f && !starR.activeSelf)
         {
-            starR.SetActive(true);
+            starR.GetComponent<UIPop>().Show();
         }
     }
 }

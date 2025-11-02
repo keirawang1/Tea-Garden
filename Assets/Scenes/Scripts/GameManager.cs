@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
             complDrinks = scoreManager.getNumComp();
             drinks = scoreManager.getNumDrinks();
 
-            stars = ((complDrinks + money) / 25);
+            stars = ((complDrinks * 5 + money) / 25);
 
             timeDelay += Time.deltaTime;
         

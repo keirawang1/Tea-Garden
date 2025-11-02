@@ -4329,7 +4329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c824e536d8688544fa8f70c92013345f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 10
+  timeLeft: 20
   timer: {fileID: 540297585}
   finishText: {fileID: 604922098}
 --- !u!1 &551614438 stripped
