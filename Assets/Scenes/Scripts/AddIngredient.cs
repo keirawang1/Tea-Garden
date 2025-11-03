@@ -7,10 +7,10 @@ public class AddIngredient : MonoBehaviour
     public GameObject AttributeDisplay;
     public OrderDisplay check;
     public TeaMaterialLibrary teaLibrary;
+    public SFXUI sfx;
 
     public void OnClick()
     {
-        AttributeDisplay.GetComponent<UISlide>().Hide();
 
         Ingredient ingredient = select.currIngredient;
         
@@ -54,6 +54,7 @@ public class AddIngredient : MonoBehaviour
             case IngredientType.Cup:
                 drink.cupSize = ingredient;
                 drink.size = ingredient.size;
+                sfx.switchSound(0);
                 break;
             case IngredientType.Tea:
                 if (drink.cupSize == null)
@@ -62,6 +63,7 @@ public class AddIngredient : MonoBehaviour
                     break;
                 }
                 drink.teaBase = ingredient;
+                sfx.switchSound(1);
                 break;
             case IngredientType.Topping:
                 if (drink.cupSize == null)
@@ -69,6 +71,7 @@ public class AddIngredient : MonoBehaviour
                     Debug.LogWarning("must add a cup first!");
                     break;
                 }
+                sfx.switchSound(0);
                 drink.topping = ingredient;
                 break;
             case IngredientType.Decoration1:
@@ -77,6 +80,7 @@ public class AddIngredient : MonoBehaviour
                     Debug.LogWarning("must add a cup first!");
                     break;
                 }
+                sfx.switchSound(0);
                 drink.decoration1 = ingredient;
                 break;
             case IngredientType.Decoration2:
@@ -85,6 +89,7 @@ public class AddIngredient : MonoBehaviour
                     Debug.LogWarning("must add a cup first!");
                     break;
                 }
+                sfx.switchSound(0);
                 drink.decoration2 = ingredient;
                 break;
         }
@@ -120,7 +125,9 @@ public class AddIngredient : MonoBehaviour
                     sceneIngredient.gameObject.SetActive(false);
             }
         }
-    
+
+        AttributeDisplay.GetComponent<UISlide>().Hide();
+
         drink.cutenessTotal += ingredient.cuteness;
         drink.sweetnessTotal += ingredient.sweetness;
         drink.costTotal += ingredient.cost;
