@@ -5,11 +5,17 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private float timeLeft = 120f;
     public TMP_Text timer;
-    private bool timerRunning = true;
+    private bool timerRunning = false;
     public GameObject finishText;
     private bool gameOver = false;
 
+    void Start()
+    {
+        int mins = Mathf.FloorToInt(timeLeft / 60);
+        int secs = Mathf.FloorToInt(timeLeft % 60);
+        timer.text = string.Format("{0}:{1:00}", mins, secs);
 
+    }
     void Update()
     {
         if (timerRunning)
@@ -39,6 +45,11 @@ public class Timer : MonoBehaviour
     public bool getGameOver()
     {
         return gameOver;
+    }
+
+    public void setTimeRun()
+    {
+        timerRunning = true;
     }
 
     }
