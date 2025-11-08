@@ -6974,7 +6974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6849511da42dbd45bfd5d116c8072bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: 3ffb5d01dce23d54fa3a8f5e22c5cddb, type: 2}
+  ingredient: {fileID: 11400000, guid: 2bddf48e33a4f3c408da69bcb51e8376, type: 2}
   nameText: {fileID: 43411708}
   icon: {fileID: 656435734}
 --- !u!114 &656435734
