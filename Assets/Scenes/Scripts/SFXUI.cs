@@ -25,11 +25,11 @@ public class SFXUI : MonoBehaviour
     {
         if (audioVer == 1)
         {
-            source.PlayOneShot(soundVer2);
+            AudioSource.PlayClipAtPoint(soundVer2, Camera.main.transform.position);
         }
         else
         {
-            source.PlayOneShot(sound);
+            AudioSource.PlayClipAtPoint(sound, Camera.main.transform.position);
         }
 
     }
