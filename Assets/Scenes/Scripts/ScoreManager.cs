@@ -11,6 +11,8 @@ public class ScoreManager : MonoBehaviour
     public GameObject cuteCheck;
     public GameObject costCheck;
     public Order orderTemp;
+    public SFXUI sfx;
+
 
     public TMP_Text moneyCounter;
     public TMP_Text moneyChangeText;
@@ -32,7 +34,11 @@ public class ScoreManager : MonoBehaviour
             moneyChange.GetComponent<CanvasGroup>().alpha = 1;
             LeanTween.alphaCanvas(moneyChange.GetComponent<CanvasGroup>(), 0f, 0.5f).setEaseOutQuad();
             LeanTween.moveY(moneyChange.GetComponent<RectTransform>(), moneyChange.GetComponent<RectTransform>().anchoredPosition.y + 50f, 1f).setEaseOutQuad();
-
+            sfx.switchSound(1);
+            
+        } else
+        {
+            sfx.switchSound(0);
         }
 
         drink.resetDrink();
