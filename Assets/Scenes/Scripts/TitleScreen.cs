@@ -12,7 +12,7 @@ public class TitleScreen : MonoBehaviour
     void Update()
     {
         timeDelay += Time.deltaTime;
-        if (timeDelay >= 1.5f && clicked)
+        if (timeDelay >= 0.5f && clicked)
         {
             SceneManager.LoadScene(sceneName: "MainScene");
 
