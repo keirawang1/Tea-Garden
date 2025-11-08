@@ -17,4 +17,4 @@ MonoBehaviour:
   randSweetMin: -2
   randSweetMax: 7
   randCostMin: 5
-  randCostMax: 11
+  randCostMax: 10

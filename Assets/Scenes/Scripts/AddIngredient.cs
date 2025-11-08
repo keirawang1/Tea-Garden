@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class AddIngredient : MonoBehaviour
 {
@@ -9,8 +10,14 @@ public class AddIngredient : MonoBehaviour
     public TeaMaterialLibrary teaLibrary;
     public SFXUI sfx;
 
+    public GameObject warningIcon;
+    public GameObject warningText;
+    public TMP_Text warnMsg;
+
     public void OnClick()
     {
+        warningText.SetActive(false);
+        warningIcon.SetActive(false);
 
         Ingredient ingredient = select.currIngredient;
         
@@ -21,31 +28,55 @@ public class AddIngredient : MonoBehaviour
         if (drink.cupSize == null && ingredient.type != IngredientType.Cup)
         {
             Debug.LogWarning("Must add a cup first!");
+            warningIcon.SetActive(true);
+            warnMsg.text = "Add a cup first!";
+            warningText.GetComponent<UIPop>().Show();
+
             return;
         }
 
         if (drink.cupSize != null && ingredient.type == IngredientType.Cup) {
             Debug.LogWarning("already added a cup");
+            warningIcon.SetActive(true);
+            warnMsg.text = "You already have a cup!";
+            warningText.GetComponent<UIPop>().Show();
+
             return;
         }    
 
         if (drink.teaBase != null && ingredient.type == IngredientType.Tea) {
             Debug.LogWarning("already added a tea");
+            warningIcon.SetActive(true);
+            warnMsg.text = "There is already tea in the cup!";
+            warningText.GetComponent<UIPop>().Show();
+
             return;
         }
 
         if (drink.topping != null && ingredient.type == IngredientType.Topping) {
             Debug.LogWarning("already added a topping");
+            warningIcon.SetActive(true);
+            warnMsg.text = "You already have a topping in the cup!";
+            warningText.GetComponent<UIPop>().Show();
+
             return;
         }
 
         if (drink.decoration1 != null && ingredient.type == IngredientType.Decoration1) {
             Debug.LogWarning("already added a deco1");
+            warningIcon.SetActive(true);
+            warnMsg.text = "You already have a lid!";
+            warningText.GetComponent<UIPop>().Show();
+
             return;
         }
 
         if (drink.decoration2 != null && ingredient.type == IngredientType.Decoration2) {
             Debug.LogWarning("already added a deco2");
+            warningIcon.SetActive(true);
+            warnMsg.text = "You already have a straw!";
+            warningText.GetComponent<UIPop>().Show();
+
             return;
         }
 
@@ -59,7 +90,10 @@ public class AddIngredient : MonoBehaviour
             case IngredientType.Tea:
                 if (drink.cupSize == null)
                 {
-                    Debug.LogWarning("must add a cup first!");
+                    Debug.LogWarning("Must add a cup first!");
+                    warningIcon.SetActive(true);
+                    warnMsg.text = "Add a cup first!";
+                    warningText.GetComponent<UIPop>().Show();
                     break;
                 }
                 drink.teaBase = ingredient;
@@ -68,7 +102,10 @@ public class AddIngredient : MonoBehaviour
             case IngredientType.Topping:
                 if (drink.cupSize == null)
                 {
-                    Debug.LogWarning("must add a cup first!");
+                    Debug.LogWarning("Must add a cup first!");
+                    warningIcon.SetActive(true);
+                    warnMsg.text = "Add a cup first!";
+                    warningText.GetComponent<UIPop>().Show();
                     break;
                 }
                 sfx.switchSound(0);
@@ -77,7 +114,10 @@ public class AddIngredient : MonoBehaviour
             case IngredientType.Decoration1:
                 if (drink.cupSize == null)
                 {
-                    Debug.LogWarning("must add a cup first!");
+                    Debug.LogWarning("Must add a cup first!");
+                    warningIcon.SetActive(true);
+                    warnMsg.text = "Add a cup first!";
+                    warningText.GetComponent<UIPop>().Show();
                     break;
                 }
                 sfx.switchSound(0);
@@ -86,7 +126,10 @@ public class AddIngredient : MonoBehaviour
             case IngredientType.Decoration2:
                 if (drink.cupSize == null)
                 {
-                    Debug.LogWarning("must add a cup first!");
+                                Debug.LogWarning("Must add a cup first!");
+            warningIcon.SetActive(true);
+            warnMsg.text = "Add a cup first!";
+            warningText.GetComponent<UIPop>().Show();
                     break;
                 }
                 sfx.switchSound(0);

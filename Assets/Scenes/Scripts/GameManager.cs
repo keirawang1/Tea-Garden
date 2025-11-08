@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public static int stars;
     private float timeDelay = 0f;
 
+
     public GameObject screenPanel;
     public GameObject readyText;
     public GameObject GoText;
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
             complDrinks = scoreManager.getNumComp();
             drinks = scoreManager.getNumDrinks();
 
-            stars = ((complDrinks * 5 + money) / 5 + 10* (drinks - complDrinks));
+            stars = ((complDrinks * 5 + money) / (5 + 10* (drinks - complDrinks)));
 
             timeDelay += Time.deltaTime;
         

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Wooden stick
   icon: {fileID: 21300000, guid: c6de3bc05f34ca9428ec674a0b3fea81, type: 3}
-  cuteness: 0
+  cuteness: 1
   sweetness: 0
   cost: 1
   type: 3
