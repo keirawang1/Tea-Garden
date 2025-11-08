@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     bool readyHidden = false;
     bool goShown = false;
 
+    bool newStarted = false;
+
 
     void Update()
     {
@@ -67,12 +69,17 @@ public class GameManager : MonoBehaviour
 
         if (gameOver)
         {
+            if (!newStarted)
+            {
+                timeDelay = 0f;
+                newStarted = true;
+            }
             money = scoreManager.getTotalMoney();
             complDrinks = scoreManager.getNumComp();
             drinks = scoreManager.getNumDrinks();
 
             stars = ((complDrinks * 5 + money) / (5 + 10* (drinks - complDrinks)));
-
+            
             timeDelay += Time.deltaTime;
         
             screenPanel.SetActive(true);
