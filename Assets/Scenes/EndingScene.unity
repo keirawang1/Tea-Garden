@@ -673,7 +673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyText: {fileID: 1185659982}
   successText: {fileID: 1875301152}
-  totalText: {fileID: 766583304}
+  failText: {fileID: 766583304}
   starL: {fileID: 296991796}
   starM: {fileID: 29559025}
   starR: {fileID: 1255715457}

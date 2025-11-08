@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Lychee jelly
   icon: {fileID: 21300000, guid: a68b91087a27daa4f9783c209dba76cb, type: 3}
-  prefab: {fileID: 0}
-  cuteness: 2
-  sweetness: 2
+  cuteness: 1
+  sweetness: 3
   cost: 1
   type: 2
+  size: 0

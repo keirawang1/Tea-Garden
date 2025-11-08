@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Large Cup
   icon: {fileID: 21300000, guid: 410e3b0df9591ac4487379d7972b80c3, type: 3}
-  prefab: {fileID: 919132149155446097, guid: edd3a75191b9f934792a5018026d1605, type: 3}
-  cuteness: 3
-  sweetness: 3
+  cuteness: 0
+  sweetness: 0
   cost: 5
   type: 0
+  size: 0

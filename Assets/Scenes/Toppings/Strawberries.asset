@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Strawberries
   icon: {fileID: 21300000, guid: f2c9a06fba49fdb4897ebfe0ffd08a87, type: 3}
-  prefab: {fileID: 0}
-  cuteness: 2
-  sweetness: 1
-  cost: 2
+  cuteness: 3
+  sweetness: 2
+  cost: 1
   type: 2
+  size: 0

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Lemon Tea
   icon: {fileID: 21300000, guid: 331a841b7dae49145b2d1bfa9f546e3c, type: 3}
-  cuteness: 4
-  sweetness: 4
-  cost: 4
+  cuteness: 1
+  sweetness: 3
+  cost: 1
   type: 1
   size: 0

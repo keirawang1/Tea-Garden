@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Star jelly
   icon: {fileID: 21300000, guid: defaab816b3bc80419180785fc19224e, type: 3}
-  prefab: {fileID: 0}
-  cuteness: 3
+  cuteness: 4
   sweetness: 2
-  cost: 2
+  cost: 1
   type: 2
+  size: 0

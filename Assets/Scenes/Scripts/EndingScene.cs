@@ -5,7 +5,7 @@ public class EndingScene : MonoBehaviour
 {
     public TMP_Text moneyText;
     public TMP_Text successText;
-    public TMP_Text totalText;
+    public TMP_Text failText;
 
     public GameObject starL;
     public GameObject starM;
@@ -22,8 +22,8 @@ public class EndingScene : MonoBehaviour
 
         moneyText.text = "$" + GameManager.money.ToString();
         successText.text = GameManager.complDrinks.ToString();
-        totalText.text = GameManager.drinks.ToString();
-        starCount = 3;
+        failText.text = (GameManager.drinks - GameManager.complDrinks).ToString();
+        starCount = GameManager.stars;
      
         
     }

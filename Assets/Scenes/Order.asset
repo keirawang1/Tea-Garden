@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2bc2d384b98a0448601eb6cda239e7, type: 3}
   m_Name: Order
   m_EditorClassIdentifier: 
-  randCuteMin: 0
-  randCuteMax: 5
-  randSweetMin: -3
-  randSweetMax: 6
-  randCostMin: 1
-  randCostMax: 7
+  randCuteMin: 2
+  randCuteMax: 12
+  randSweetMin: -2
+  randSweetMax: 7
+  randCostMin: 5
+  randCostMax: 11
